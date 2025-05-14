@@ -4,7 +4,6 @@ import secrets
 
 security = HTTPBasic()
 
-# Usuario hardcodeado para ejemplo básico
 USER = "admin"
 PASSWORD = "admin123"
 

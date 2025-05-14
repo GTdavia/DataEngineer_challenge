@@ -1,0 +1,24 @@
+yaml
+version: '3.8'
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/code
+    environment:
+      - TYPESENSE_API_KEY=xyz
+    depends_on:
+      - typesense
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  typesense:
+    image: typesense/typesense:latest
+    environment:
+      TYPESENSE_API_KEY: xyz
+      TYPESENSE_DATA_DIR: /data
+    ports:
+      - "8108:8108"
+    volumes:
+      - ./typesense-data:/data

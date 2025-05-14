@@ -1,0 +1,7 @@
+graph TD
+  CSV["Archivo CSV"] --> Bronze["Bronze Layer"]
+  Bronze --> Silver["Silver Layer (dim_cliente, dim_producto, dim_tiempo)"]
+  Silver --> Gold["Gold Layer (fact_ventas)"]
+  Gold --> API["REST API"]
+  API --> UI["User"]
+  API --> Typesense["Vector DB"]

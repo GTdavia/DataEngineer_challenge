@@ -1,0 +1,6 @@
+fastapi
+sqlmodel
+uvicorn
+pandas
+python-dotenv
+typesense

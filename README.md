@@ -114,4 +114,4 @@ Visualizalos en [Mermaid Live Editor](https://mermaid.live/edit).
 
 ## 📄 Licencia
 
-MIT © Tu Nombre
+MIT © Gonzalo Javier Teruggi
